@@ -22,7 +22,6 @@ public class Board {
 
     public void setFigure(int row, int col, Figure figure) {
         rows.get(row).getFigures().set(col, figure);
-        //rows.get(row).getFigures().remove(col+1);
     }
 
     @Override
