@@ -3,8 +3,13 @@ package com.checkers.checkers;
 public class None extends Figure {
     private String none;
 
-    public None() {
-        none = "__";
+    public None(String color) {
+        super(color);
+        none = super.getFigureColorLetter() + "__";
+    }
+
+    public String getNone() {
+        return none;
     }
 
     @Override

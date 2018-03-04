@@ -6,5 +6,17 @@ public class Figure {
     public static final String WHITE = "White";
     public static final String NONE = "None";
 
+    public Figure(String color) {
+        this.color = color;
+    }
 
+    public String getFigureColorLetter() {
+        if(color.equals(BLACK)) {
+            return "b";
+        } else if(color.equals(WHITE)) {
+            return "w";
+        } else {
+            return "";
+        }
+    }
 }

@@ -3,8 +3,13 @@ package com.checkers.checkers;
 public class Queen extends Figure {
     private String queen;
 
-    public Queen() {
-        queen = "Q";
+    public Queen(String color) {
+        super(color);
+        queen = super.getFigureColorLetter()+"Q";
+    }
+
+    public String getQueen() {
+        return queen;
     }
 
     @Override
