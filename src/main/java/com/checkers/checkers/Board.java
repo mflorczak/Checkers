@@ -26,9 +26,10 @@ public class Board {
 
     @Override
     public String toString() {
+        String s = "";
         for (BoardRow row: rows ) {
-            System.out.print(row);
+            s += row.toString();
         }
-        return "";
+        return s;
     }
 }
