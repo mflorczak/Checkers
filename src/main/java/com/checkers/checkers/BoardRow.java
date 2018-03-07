@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BoardRow {
     private List<Figure> figures = new ArrayList();
-    private int rowNumber =8 ;
+    private int rowNumber = 8;
     public BoardRow() {
         for (int i=0; i<8; i++) {
             figures.add(new None(Figure.NONE));
@@ -23,7 +23,6 @@ public class BoardRow {
         for (Figure figure: figures) {
             s +=  "|" + figure.toString();
         }
-        rowNumber -=1;
-        return rowNumber + "|" + "  " + s + "|\n";
+        return "  " + s + "|\n";
     }
 }

@@ -27,8 +27,17 @@ public class Board {
     @Override
     public String toString() {
         String s = "";
+        int numberRow = 9;
+        char letter = 'A';
+        System.out.print(" __");
+        for(int i=0; i<8; i++) {
+            System.out.print("|" + letter++ +" ");
+        }
+        System.out.println("|");
+
         for (BoardRow row: rows ) {
-            s += row.toString();
+            numberRow--;
+            s += numberRow + row.toString();
         }
         return s;
     }

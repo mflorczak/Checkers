@@ -9,14 +9,8 @@ public class CheckersApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CheckersApplication.class, args);
-		char letter ='A';
 
 		Board board = new Board();
-		System.out.print("    ");
-		for(int i=0; i<8; i++) {
-			System.out.print(" " + letter++ +" ");
-		}
-		System.out.println("\n    -------------------------");
 
 		for(int i=0; i<=7; i+=2) {
 			board.setFigure(0, i, new Pawn(Figure.BLACK));
