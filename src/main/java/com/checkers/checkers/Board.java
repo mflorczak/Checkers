@@ -24,6 +24,18 @@ public class Board {
         rows.get(row).getFigures().set(col, figure);
     }
 
+    public void move(int x1, int y1, int x2, int y2) {
+        if((x1 != x2 && y1 > y2 && y1 == y2 + 1) && (rows.get(y1).getFigures().get(x1).getColor() == Figure.WHITE)) {
+            rows.get(y2).getFigures().set(x2, new Pawn(Figure.WHITE));
+            rows.get(y1).getFigures().set(x1, new None(Figure.NONE));
+        } else if ((x1 != x2 && y1 < y2 && y1 == y2 - 1) && (rows.get(y1).getFigures().get(x1).getColor() == Figure.BLACK)) {
+                rows.get(y2).getFigures().set(x2, new Pawn(Figure.BLACK));
+                rows.get(y1).getFigures().set(x1, new None(Figure.NONE));
+        } else {
+            System.out.println("Wrong move!!!");
+        }
+    }
+
     @Override
     public String toString() {
         String s = "";

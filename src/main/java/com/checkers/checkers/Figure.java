@@ -19,4 +19,8 @@ public class Figure {
             return "";
         }
     }
+
+    public String getColor() {
+        return color;
+    }
 }

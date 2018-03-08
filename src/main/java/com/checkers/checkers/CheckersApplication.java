@@ -21,6 +21,23 @@ public class CheckersApplication {
 			board.setFigure(1, i, new Pawn(Figure.BLACK));
 			board.setFigure(7, i, new Pawn(Figure.WHITE));
 		}
-		System.out.print(board);
+		System.out.println(board);
+
+		board.move(0,6,1,5);
+		System.out.println(board);
+		board.move(1,5,0,4);
+		System.out.println(board);
+
+		board.move(6,6,7,5);
+		System.out.println(board);
+
+		board.move(7,5,6,6);
+		System.out.println(board);
+
+		board.move(0,4,1,2);
+		System.out.println(board);
+
+		board.move(1,1,0,2);
+		System.out.println(board);
 	}
 }
