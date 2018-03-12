@@ -25,6 +25,7 @@ public class CheckersApplication {
 
 		board.move(0,6,1,5);
 		System.out.println(board);
+
 		board.move(1,5,0,4);
 		System.out.println(board);
 
@@ -34,10 +35,15 @@ public class CheckersApplication {
 		board.move(7,5,6,6);
 		System.out.println(board);
 
-		board.move(0,4,1,2);
-		System.out.println(board);
 
 		board.move(1,1,0,2);
 		System.out.println(board);
+
+		board.move(0,2,1,3);
+		System.out.println(board);
+
+		board.move(1,3,0,4);
+		System.out.println(board);
+
 	}
 }
