@@ -15,11 +15,12 @@ public class BoardRow {
         return figures;
     }
 
+
     @Override
     public String toString() {
         String s = "";
         for (Figure figure: figures) {
-            s +=  "|" + figure.toString();
+            s += "|" + figure.toString();
         }
         return "  " + s + "|\n";
     }
